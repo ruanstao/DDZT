@@ -42,6 +42,8 @@
 		62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E9C1E6E8F3100A6FC9F /* UIView+ViewController.m */; };
 		62134EBB1E6E8F3100A6FC9F /* UIViewController+TopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E9E1E6E8F3100A6FC9F /* UIViewController+TopVC.m */; };
 		62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */; };
+		62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC41E6EA1C800A6FC9F /* Networking.m */; };
+		62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC71E6EA2A400A6FC9F /* RTUtil.m */; };
 		C306E6C0CB0837EBDDD1BAEC /* libPods-DDZT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78083D34DACD83D101B94B /* libPods-DDZT.a */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +92,6 @@
 		62134E5F1E6E81B700A6FC9F /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		62134E611E6E81E100A6FC9F /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		62134E621E6E81E100A6FC9F /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		62134E641E6E8C8A00A6FC9F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		62134E661E6E8F3100A6FC9F /* CALayer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Additions.h"; sourceTree = "<group>"; };
 		62134E671E6E8F3100A6FC9F /* CALayer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Additions.m"; sourceTree = "<group>"; };
 		62134E681E6E8F3100A6FC9F /* CategoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryUtils.h; sourceTree = "<group>"; };
@@ -138,6 +139,11 @@
 		62134EBD1E6E93B300A6FC9F /* NetworkAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkAPI.h; sourceTree = "<group>"; };
 		62134EBF1E6E9AC500A6FC9F /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
 		62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		62134EC31E6EA1C800A6FC9F /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		62134EC41E6EA1C800A6FC9F /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networking.m; sourceTree = "<group>"; };
+		62134EC61E6EA2A400A6FC9F /* RTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUtil.h; sourceTree = "<group>"; };
+		62134EC71E6EA2A400A6FC9F /* RTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUtil.m; sourceTree = "<group>"; };
+		62134ECA1E6EA6C000A6FC9F /* DDZT-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZT-PrefixHeader.pch"; sourceTree = "<group>"; };
 		DACC5E761CAA6475C02645ED /* Pods-DDZT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDZT.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DDZT/Pods-DDZT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,9 +233,9 @@
 		62134E0D1E6E66FC00A6FC9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				62134ECA1E6EA6C000A6FC9F /* DDZT-PrefixHeader.pch */,
 				62134E431E6E679B00A6FC9F /* DDZT-Bridging-Header.h */,
 				62134E0E1E6E66FC00A6FC9F /* main.m */,
-				62134E641E6E8C8A00A6FC9F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 		62134E4D1E6E7DAB00A6FC9F /* General */ = {
 			isa = PBXGroup;
 			children = (
+				62134EC21E6EA1A900A6FC9F /* Tools */,
 				62134E651E6E8F3100A6FC9F /* Category */,
 				62134E9F1E6E8F3100A6FC9F /* Define */,
 				62134E551E6E7E0A00A6FC9F /* ViewControllers */,
@@ -399,6 +406,17 @@
 				62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */,
 			);
 			path = RSAEncryptor;
+			sourceTree = "<group>";
+		};
+		62134EC21E6EA1A900A6FC9F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				62134EC31E6EA1C800A6FC9F /* Networking.h */,
+				62134EC41E6EA1C800A6FC9F /* Networking.m */,
+				62134EC61E6EA2A400A6FC9F /* RTUtil.h */,
+				62134EC71E6EA2A400A6FC9F /* RTUtil.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,6 +617,7 @@
 				62134EBB1E6E8F3100A6FC9F /* UIViewController+TopVC.m in Sources */,
 				62134EA21E6E8F3100A6FC9F /* NSData+Addition.m in Sources */,
 				62134EA81E6E8F3100A6FC9F /* NSTimer+Addition.m in Sources */,
+				62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */,
 				62134E631E6E81E100A6FC9F /* BaseTabBarController.m in Sources */,
 				62134EAC1E6E8F3100A6FC9F /* UIImage+Rendering.m in Sources */,
 				62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */,
@@ -615,6 +634,7 @@
 				62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */,
 				62134E1B1E6E66FC00A6FC9F /* DDZT.xcdatamodeld in Sources */,
 				62134EAB1E6E8F3100A6FC9F /* UICollectionViewCell+Create.m in Sources */,
+				62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */,
 				62134EAA1E6E8F3100A6FC9F /* UIButton+Block.m in Sources */,
 				62134E5B1E6E7EFD00A6FC9F /* LoginViewController.m in Sources */,
 			);
@@ -768,6 +788,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QZL59SN5K2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DDZT/DDZT-PrefixHeader.pch";
 				INFOPLIST_FILE = DDZT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rt.DDZT;
@@ -775,7 +797,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "DDZT/DDZT-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/DDZT/PrefixHeader.pch";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -786,13 +808,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QZL59SN5K2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DDZT/DDZT-PrefixHeader.pch";
 				INFOPLIST_FILE = DDZT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rt.DDZT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDZT/DDZT-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/DDZT/PrefixHeader.pch";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

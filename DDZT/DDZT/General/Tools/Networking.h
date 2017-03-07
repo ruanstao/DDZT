@@ -1,0 +1,19 @@
+//
+//  Networking.h
+//  DDZT
+//
+//  Created by ruanstao on 2017/3/7.
+//  Copyright © 2017年 ruanstao. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Networking : NSObject
+
++ (id)sharedInstance;
++ (void)startMonitoringNetwork;
++ (BOOL)isNetworkReachable;
+//Network Request Method(default is POST)
+@property (nonatomic , copy) NSString *httpMethod;
+
+@end
