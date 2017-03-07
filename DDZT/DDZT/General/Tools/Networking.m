@@ -75,5 +75,8 @@
     return ((AFNetworkReachabilityManager *)[AFNetworkReachabilityManager sharedManager]).reachable;
 }
 
-
+- (void)requestData
+{
+    
+}
 @end

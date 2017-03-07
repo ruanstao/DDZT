@@ -15,11 +15,8 @@
 		62134E201E6E66FC00A6FC9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62134E1E1E6E66FC00A6FC9F /* LaunchScreen.storyboard */; };
 		62134E2B1E6E66FC00A6FC9F /* DDZTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E2A1E6E66FC00A6FC9F /* DDZTTests.m */; };
 		62134E361E6E66FC00A6FC9F /* DDZTUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E351E6E66FC00A6FC9F /* DDZTUITests.m */; };
-		62134E581E6E7E2B00A6FC9F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E571E6E7E2B00A6FC9F /* BaseViewController.m */; };
 		62134E5B1E6E7EFD00A6FC9F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E5A1E6E7EFD00A6FC9F /* LoginViewController.m */; };
 		62134E5D1E6E7F2300A6FC9F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62134E5C1E6E7F2300A6FC9F /* Login.storyboard */; };
-		62134E601E6E81B700A6FC9F /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E5F1E6E81B700A6FC9F /* BaseNavigationController.m */; };
-		62134E631E6E81E100A6FC9F /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E621E6E81E100A6FC9F /* BaseTabBarController.m */; };
 		62134EA01E6E8F3100A6FC9F /* CALayer+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E671E6E8F3100A6FC9F /* CALayer+Additions.m */; };
 		62134EA21E6E8F3100A6FC9F /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E6C1E6E8F3100A6FC9F /* NSData+Addition.m */; };
 		62134EA41E6E8F3100A6FC9F /* NSDictionary+RtDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E701E6E8F3100A6FC9F /* NSDictionary+RtDictionary.m */; };
@@ -44,6 +41,10 @@
 		62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */; };
 		62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC41E6EA1C800A6FC9F /* Networking.m */; };
 		62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC71E6EA2A400A6FC9F /* RTUtil.m */; };
+		62A8FB661E6EFDB000476C06 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB611E6EFDB000476C06 /* BaseNavigationController.m */; };
+		62A8FB671E6EFDB000476C06 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB631E6EFDB000476C06 /* BaseTabBarController.m */; };
+		62A8FB681E6EFDB000476C06 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB651E6EFDB000476C06 /* BaseViewController.m */; };
+		62A8FB6E1E6EFE7E00476C06 /* LoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */; };
 		C306E6C0CB0837EBDDD1BAEC /* libPods-DDZT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78083D34DACD83D101B94B /* libPods-DDZT.a */; };
 /* End PBXBuildFile section */
 
@@ -83,15 +84,9 @@
 		62134E351E6E66FC00A6FC9F /* DDZTUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDZTUITests.m; sourceTree = "<group>"; };
 		62134E371E6E66FC00A6FC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62134E431E6E679B00A6FC9F /* DDZT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDZT-Bridging-Header.h"; sourceTree = "<group>"; };
-		62134E561E6E7E2B00A6FC9F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		62134E571E6E7E2B00A6FC9F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		62134E591E6E7EFD00A6FC9F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		62134E5A1E6E7EFD00A6FC9F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		62134E5C1E6E7F2300A6FC9F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		62134E5E1E6E81B700A6FC9F /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		62134E5F1E6E81B700A6FC9F /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		62134E611E6E81E100A6FC9F /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
-		62134E621E6E81E100A6FC9F /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		62134E661E6E8F3100A6FC9F /* CALayer+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Additions.h"; sourceTree = "<group>"; };
 		62134E671E6E8F3100A6FC9F /* CALayer+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Additions.m"; sourceTree = "<group>"; };
 		62134E681E6E8F3100A6FC9F /* CategoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryUtils.h; sourceTree = "<group>"; };
@@ -144,6 +139,14 @@
 		62134EC61E6EA2A400A6FC9F /* RTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUtil.h; sourceTree = "<group>"; };
 		62134EC71E6EA2A400A6FC9F /* RTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUtil.m; sourceTree = "<group>"; };
 		62134ECA1E6EA6C000A6FC9F /* DDZT-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZT-PrefixHeader.pch"; sourceTree = "<group>"; };
+		62A8FB601E6EFDB000476C06 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		62A8FB611E6EFDB000476C06 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		62A8FB621E6EFDB000476C06 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		62A8FB631E6EFDB000476C06 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		62A8FB641E6EFDB000476C06 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		62A8FB651E6EFDB000476C06 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		62A8FB6C1E6EFE7E00476C06 /* LoginVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVM.h; sourceTree = "<group>"; };
+		62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVM.m; sourceTree = "<group>"; };
 		DACC5E761CAA6475C02645ED /* Pods-DDZT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDZT.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DDZT/Pods-DDZT.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,26 +273,12 @@
 			isa = PBXGroup;
 			children = (
 				62134E4A1E6E7D1D00A6FC9F /* ViewControllers */,
-				62134E491E6E7D1D00A6FC9F /* View */,
-				62134E481E6E7D1D00A6FC9F /* Model */,
-				62134E4B1E6E7D1D00A6FC9F /* VM */,
+				62A8FB6A1E6EFE6400476C06 /* View */,
+				62A8FB691E6EFE6400476C06 /* Model */,
+				62A8FB6B1E6EFE6400476C06 /* VM */,
 				62134E5C1E6E7F2300A6FC9F /* Login.storyboard */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		62134E481E6E7D1D00A6FC9F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		62134E491E6E7D1D00A6FC9F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		62134E4A1E6E7D1D00A6FC9F /* ViewControllers */ = {
@@ -301,20 +290,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		62134E4B1E6E7D1D00A6FC9F /* VM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
 		62134E4D1E6E7DAB00A6FC9F /* General */ = {
 			isa = PBXGroup;
 			children = (
+				62A8FB5F1E6EFDB000476C06 /* BaseViewControllers */,
 				62134EC21E6EA1A900A6FC9F /* Tools */,
 				62134E651E6E8F3100A6FC9F /* Category */,
 				62134E9F1E6E8F3100A6FC9F /* Define */,
-				62134E551E6E7E0A00A6FC9F /* ViewControllers */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -325,19 +307,6 @@
 				62134EBE1E6E9AC500A6FC9F /* RSAEncryptor */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		62134E551E6E7E0A00A6FC9F /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				62134E561E6E7E2B00A6FC9F /* BaseViewController.h */,
-				62134E571E6E7E2B00A6FC9F /* BaseViewController.m */,
-				62134E5E1E6E81B700A6FC9F /* BaseNavigationController.h */,
-				62134E5F1E6E81B700A6FC9F /* BaseNavigationController.m */,
-				62134E611E6E81E100A6FC9F /* BaseTabBarController.h */,
-				62134E621E6E81E100A6FC9F /* BaseTabBarController.m */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		62134E651E6E8F3100A6FC9F /* Category */ = {
@@ -417,6 +386,42 @@
 				62134EC71E6EA2A400A6FC9F /* RTUtil.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		62A8FB5F1E6EFDB000476C06 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62A8FB601E6EFDB000476C06 /* BaseNavigationController.h */,
+				62A8FB611E6EFDB000476C06 /* BaseNavigationController.m */,
+				62A8FB621E6EFDB000476C06 /* BaseTabBarController.h */,
+				62A8FB631E6EFDB000476C06 /* BaseTabBarController.m */,
+				62A8FB641E6EFDB000476C06 /* BaseViewController.h */,
+				62A8FB651E6EFDB000476C06 /* BaseViewController.m */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		62A8FB691E6EFE6400476C06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62A8FB6A1E6EFE6400476C06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62A8FB6B1E6EFE6400476C06 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				62A8FB6C1E6EFE7E00476C06 /* LoginVM.h */,
+				62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A8FB6E1E6EFE7E00476C06 /* LoginVM.m in Sources */,
 				62134E121E6E66FC00A6FC9F /* AppDelegate.m in Sources */,
 				62134EB71E6E8F3100A6FC9F /* UIView+Frame.m in Sources */,
 				62134EB31E6E8F3100A6FC9F /* UITextField+LimitLength.m in Sources */,
@@ -615,19 +621,19 @@
 				62134EB11E6E8F3100A6FC9F /* UITableView+TouchView.m in Sources */,
 				62134EB81E6E8F3100A6FC9F /* UIView+Layer.m in Sources */,
 				62134EBB1E6E8F3100A6FC9F /* UIViewController+TopVC.m in Sources */,
+				62A8FB661E6EFDB000476C06 /* BaseNavigationController.m in Sources */,
+				62A8FB671E6EFDB000476C06 /* BaseTabBarController.m in Sources */,
 				62134EA21E6E8F3100A6FC9F /* NSData+Addition.m in Sources */,
 				62134EA81E6E8F3100A6FC9F /* NSTimer+Addition.m in Sources */,
 				62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */,
-				62134E631E6E81E100A6FC9F /* BaseTabBarController.m in Sources */,
 				62134EAC1E6E8F3100A6FC9F /* UIImage+Rendering.m in Sources */,
 				62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */,
 				62134EA61E6E8F3100A6FC9F /* NSString+MD5.m in Sources */,
+				62A8FB681E6EFDB000476C06 /* BaseViewController.m in Sources */,
 				62134EB61E6E8F3100A6FC9F /* UIView+Animation.m in Sources */,
 				62134EAD1E6E8F3100A6FC9F /* UINavigationBar+Awesome.m in Sources */,
 				62134EB41E6E8F3100A6FC9F /* UITextView+Placeholder.m in Sources */,
 				62134EB21E6E8F3100A6FC9F /* UITableViewCell+Create.m in Sources */,
-				62134E581E6E7E2B00A6FC9F /* BaseViewController.m in Sources */,
-				62134E601E6E81B700A6FC9F /* BaseNavigationController.m in Sources */,
 				62134EAE1E6E8F3100A6FC9F /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				62134EB91E6E8F3100A6FC9F /* UIView+Runtime.m in Sources */,
 				62134E0F1E6E66FC00A6FC9F /* main.m in Sources */,
