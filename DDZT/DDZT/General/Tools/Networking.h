@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^successBlock)(BOOL success,id obj);
+typedef void(^failureBlock)(NSError *error);
+
 @interface Networking : NSObject
 
 + (id)sharedInstance;
@@ -15,5 +18,7 @@
 + (BOOL)isNetworkReachable;
 //Network Request Method(default is POST)
 @property (nonatomic , copy) NSString *httpMethod;
+
+- (void)requestDataWithParames:(NSDictionary *)params path:(NSString*)urlPath complete:(successBlock)success fail:(failureBlock)fail;
 
 @end

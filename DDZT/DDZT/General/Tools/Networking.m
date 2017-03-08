@@ -9,6 +9,11 @@
 #import "Networking.h"
 #import "AFNetworking.h"
 #import <AFNetworkActivityIndicatorManager.h>
+@interface Networking ()
+
+@property (nonatomic,strong) AFHTTPSessionManager *httpSessionManager;
+//@property (nonatomic,strong) AFURLSessionManager *urlSessionManager;
+@end
 @implementation Networking
 - (id)init
 {
@@ -75,8 +80,31 @@
     return ((AFNetworkReachabilityManager *)[AFNetworkReachabilityManager sharedManager]).reachable;
 }
 
-- (void)requestData
+- (AFHTTPSessionManager *)httpSessionManager
 {
-    
+    if (_httpSessionManager) {
+        _httpSessionManager = [AFHTTPSessionManager manager];
+    }
+    return _httpSessionManager;
 }
+//- (AFURLSessionManager *)urlSessionManager
+//{
+//    if (_urlSessionManager) {
+//        _urlSessionManager = [AFURLSessionManager ];
+//    }
+//    return _urlSessionManager;
+//}
+
+- (void)requestDataWithParames:(NSDictionary *)params path:(NSString*)urlPath complete:(successBlock)success fail:(failureBlock)fail
+{
+
+   NSURLSessionDataTask *dataTask =  [self.httpSessionManager dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlPath]] completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+       NSLog(@"response: %@",response);
+       NSLog(@"responseObject: %@",responseObject);
+       NSLog(@"error: %@",error);
+       
+    }];
+    [dataTask resume];
+}
+
 @end

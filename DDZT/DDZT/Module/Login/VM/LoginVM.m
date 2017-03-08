@@ -9,7 +9,15 @@
 #import "LoginVM.h"
 
 @implementation LoginVM
-
+- (void)login
+{
+    NSLog(@"%@",GetPublicKeyApi);
+//    [[Networking sharedInstance] requestDataWithParames:@{} path:GetPublicKeyApi complete:^(BOOL success, id obj) {
+//        
+//    } fail:^(NSError *error) {
+//        
+//    }];
+}
 @end
 
 //{
