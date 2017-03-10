@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (self.navigationController.viewControllers.count > 1)
+    {
+        [self showBackButton:YES];
+    }else{
+        [self showBackButton:[self isShowBackButton]];
+    }
     
 }
 
@@ -34,5 +40,44 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (BOOL)isShowBackButton
+{
+    return NO;
+}
+
+- (void)showBackButton:(BOOL)show
+{
+    if (show)
+    {
+        UIBarButtonItem *left = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"backMenu"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBarAction:)];
+        self.navigationItem.leftBarButtonItem = left;
+    }else{
+        self.navigationItem.leftBarButtonItem = nil;
+    }
+
+//    UIImage *img = mImageByName(@"backBtn");
+//    self.backBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+//    self.backBtn.frame = CGRectMake(0, (44 - img.size.height)/2-1, img.size.width, img.size.height);
+//    self.backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+//    [self.backBtn setTitle:@"返回" forState:UIControlStateNormal];
+//    // Replace backItem with real back button image
+//    [self.backBtn setBackgroundImage:img forState:UIControlStateNormal];
+//    [self.backBtn setTitleColor:kBtnTitleNormalColor forState:UIControlStateNormal];
+//    self.backBtn.titleLabel.font = [UIFont systemFontOfSize:0];
+//    self.backBtn.titleLabel.adjustsFontSizeToFitWidth = YES;
+//    
+//    [self.backBtn addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+//    self.backBtn.showsTouchWhenHighlighted = YES;
+//    
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backBtn];
+}
+
+- (void)leftBarAction:(UIBarButtonItem *)item
+{
+    if ([self.navigationController popViewControllerAnimated:YES] == nil) {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
+}
 
 @end

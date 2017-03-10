@@ -45,6 +45,8 @@
 		623E944B1E72879D00D9CF1F /* CommonVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E944A1E72879D00D9CF1F /* CommonVM.m */; };
 		623E944E1E72906E00D9CF1F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E944D1E72906E00D9CF1F /* UserModel.m */; };
 		623E94511E72963000D9CF1F /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E94501E72963000D9CF1F /* TokenModel.m */; };
+		623E94541E72AB9900D9CF1F /* RigisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E94531E72AB9900D9CF1F /* RigisterViewController.m */; };
+		623E94571E72ABA900D9CF1F /* ForgetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E94561E72ABA900D9CF1F /* ForgetPwdViewController.m */; };
 		627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD41E71211A003E1941 /* BaseNavigationController.m */; };
 		627C3DDA1E71211A003E1941 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD61E71211A003E1941 /* BaseTabBarController.m */; };
 		627C3DDB1E71211A003E1941 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD81E71211A003E1941 /* BaseViewController.m */; };
@@ -160,6 +162,10 @@
 		623E944D1E72906E00D9CF1F /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		623E944F1E72963000D9CF1F /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
 		623E94501E72963000D9CF1F /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
+		623E94521E72AB9900D9CF1F /* RigisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RigisterViewController.h; sourceTree = "<group>"; };
+		623E94531E72AB9900D9CF1F /* RigisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RigisterViewController.m; sourceTree = "<group>"; };
+		623E94551E72ABA900D9CF1F /* ForgetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdViewController.h; sourceTree = "<group>"; };
+		623E94561E72ABA900D9CF1F /* ForgetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdViewController.m; sourceTree = "<group>"; };
 		627C3DD31E71211A003E1941 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		627C3DD41E71211A003E1941 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		627C3DD51E71211A003E1941 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -323,6 +329,10 @@
 			children = (
 				62134E591E6E7EFD00A6FC9F /* LoginViewController.h */,
 				62134E5A1E6E7EFD00A6FC9F /* LoginViewController.m */,
+				623E94521E72AB9900D9CF1F /* RigisterViewController.h */,
+				623E94531E72AB9900D9CF1F /* RigisterViewController.m */,
+				623E94551E72ABA900D9CF1F /* ForgetPwdViewController.h */,
+				623E94561E72ABA900D9CF1F /* ForgetPwdViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -697,8 +707,10 @@
 				62134EA81E6E8F3100A6FC9F /* NSTimer+Addition.m in Sources */,
 				62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */,
 				62134EAC1E6E8F3100A6FC9F /* UIImage+Rendering.m in Sources */,
+				623E94541E72AB9900D9CF1F /* RigisterViewController.m in Sources */,
 				627C3DF21E715260003E1941 /* AppDelegate+BaiduMap.m in Sources */,
 				627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */,
+				623E94571E72ABA900D9CF1F /* ForgetPwdViewController.m in Sources */,
 				623E94511E72963000D9CF1F /* TokenModel.m in Sources */,
 				627C3DF71E715260003E1941 /* AppDelegate+Supplement.m in Sources */,
 				62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */,

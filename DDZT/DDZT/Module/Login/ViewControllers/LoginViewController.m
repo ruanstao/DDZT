@@ -11,6 +11,9 @@
 
 @interface LoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *loginView;
+@property (weak, nonatomic) IBOutlet UITextField *acoundTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (nonatomic,strong) KeysModel *model;
 @end
 
@@ -20,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    密码 —> sha1 —> rsa —> base64 —> string
-    [LoginVM loginWithPhone:@"13632889390" completion:^(BOOL finish, RSAKeyModel *model) {
+    [LoginVM getKeyPairWithPhone:@"13632889390" completion:^(BOOL finish, RSAKeyModel *model) {
         if (finish) {
             self.model = model.data;
         }
@@ -31,21 +34,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)encry:(id)sender {
-    NSString *sha1 = [RTUtil sha1:self.textF.text];
-    NSString *rsa = [RTUtil encrypString:sha1 withPubKey:self.model.publicKey];
-    NSString *base64 = [RTUtil base64EncodeString:rsa];
-    NSLog(@"text: %@",self.textF.text);
-    NSLog(@"sha1: %@",sha1);
-    NSLog(@"rsa: %@",rsa);
-    NSLog(@"base64: %@",base64);
-    self.publabel.text = base64;
-}
 
-- (IBAction)decry:(id)sender {
-
-//    self.prilabel.text = [RTUtil decrypString:self.publabel.text withPriKey:RSA_Privite_key /*self.model.privateKey*/];
-}
 /*
 #pragma mark - Navigation
 
@@ -55,5 +44,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)login:(id)sender {
+    
+}
+- (IBAction)rigister:(id)sender {
+    
+}
+- (IBAction)forgetPwd:(id)sender {
+    
+}
 
 @end

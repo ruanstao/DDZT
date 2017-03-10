@@ -20,6 +20,11 @@ typedef enum : NSUInteger {
 
 
 /**
+ 获取rsa秘钥
+ */
++ (void)getKeyPairWithPhone:(NSString *)phoneNum completion:(void(^)(BOOL finish, id obj))completion;
+
+/**
  登录
  */
 + (void)loginWithPhone:(NSString *)phoneNum passWord:(NSString *)pwd completion:(void(^)(BOOL finish, id obj))completion;
