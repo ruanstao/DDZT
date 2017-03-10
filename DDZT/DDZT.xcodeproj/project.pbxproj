@@ -41,6 +41,10 @@
 		62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */; };
 		62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC41E6EA1C800A6FC9F /* Networking.m */; };
 		62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC71E6EA2A400A6FC9F /* RTUtil.m */; };
+		623E94481E72514100D9CF1F /* RSAKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E94471E72514100D9CF1F /* RSAKeyModel.m */; };
+		623E944B1E72879D00D9CF1F /* CommonVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E944A1E72879D00D9CF1F /* CommonVM.m */; };
+		623E944E1E72906E00D9CF1F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E944D1E72906E00D9CF1F /* UserModel.m */; };
+		623E94511E72963000D9CF1F /* TokenModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E94501E72963000D9CF1F /* TokenModel.m */; };
 		627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD41E71211A003E1941 /* BaseNavigationController.m */; };
 		627C3DDA1E71211A003E1941 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD61E71211A003E1941 /* BaseTabBarController.m */; };
 		627C3DDB1E71211A003E1941 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD81E71211A003E1941 /* BaseViewController.m */; };
@@ -148,6 +152,14 @@
 		62134EC71E6EA2A400A6FC9F /* RTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUtil.m; sourceTree = "<group>"; };
 		62134ECA1E6EA6C000A6FC9F /* DDZT-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZT-PrefixHeader.pch"; sourceTree = "<group>"; };
 		623E94451E72329B00D9CF1F /* KeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyDefine.h; sourceTree = "<group>"; };
+		623E94461E72514100D9CF1F /* RSAKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAKeyModel.h; sourceTree = "<group>"; };
+		623E94471E72514100D9CF1F /* RSAKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAKeyModel.m; sourceTree = "<group>"; };
+		623E94491E72879D00D9CF1F /* CommonVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonVM.h; sourceTree = "<group>"; };
+		623E944A1E72879D00D9CF1F /* CommonVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonVM.m; sourceTree = "<group>"; };
+		623E944C1E72906E00D9CF1F /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		623E944D1E72906E00D9CF1F /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		623E944F1E72963000D9CF1F /* TokenModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenModel.h; sourceTree = "<group>"; };
+		623E94501E72963000D9CF1F /* TokenModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenModel.m; sourceTree = "<group>"; };
 		627C3DD31E71211A003E1941 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		627C3DD41E71211A003E1941 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		627C3DD51E71211A003E1941 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
@@ -427,6 +439,8 @@
 				627C3DD81E71211A003E1941 /* BaseViewController.m */,
 				627C3DDC1E712134003E1941 /* BaseModel.h */,
 				627C3DDD1E712134003E1941 /* BaseModel.m */,
+				623E94491E72879D00D9CF1F /* CommonVM.h */,
+				623E944A1E72879D00D9CF1F /* CommonVM.m */,
 			);
 			path = BaseViewAndModel;
 			sourceTree = "<group>";
@@ -449,6 +463,12 @@
 		62A8FB691E6EFE6400476C06 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				623E94461E72514100D9CF1F /* RSAKeyModel.h */,
+				623E94471E72514100D9CF1F /* RSAKeyModel.m */,
+				623E944C1E72906E00D9CF1F /* UserModel.h */,
+				623E944D1E72906E00D9CF1F /* UserModel.m */,
+				623E944F1E72963000D9CF1F /* TokenModel.h */,
+				623E94501E72963000D9CF1F /* TokenModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -664,6 +684,7 @@
 				62134EB71E6E8F3100A6FC9F /* UIView+Frame.m in Sources */,
 				627C3DDE1E712134003E1941 /* BaseModel.m in Sources */,
 				62134EB31E6E8F3100A6FC9F /* UITextField+LimitLength.m in Sources */,
+				623E944E1E72906E00D9CF1F /* UserModel.m in Sources */,
 				627C3DDA1E71211A003E1941 /* BaseTabBarController.m in Sources */,
 				62134EB51E6E8F3100A6FC9F /* UIView+Addition.m in Sources */,
 				62134EA01E6E8F3100A6FC9F /* CALayer+Additions.m in Sources */,
@@ -678,6 +699,7 @@
 				62134EAC1E6E8F3100A6FC9F /* UIImage+Rendering.m in Sources */,
 				627C3DF21E715260003E1941 /* AppDelegate+BaiduMap.m in Sources */,
 				627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */,
+				623E94511E72963000D9CF1F /* TokenModel.m in Sources */,
 				627C3DF71E715260003E1941 /* AppDelegate+Supplement.m in Sources */,
 				62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */,
 				62134EA61E6E8F3100A6FC9F /* NSString+MD5.m in Sources */,
@@ -694,6 +716,8 @@
 				62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */,
 				62134EAA1E6E8F3100A6FC9F /* UIButton+Block.m in Sources */,
 				62134E5B1E6E7EFD00A6FC9F /* LoginViewController.m in Sources */,
+				623E94481E72514100D9CF1F /* RSAKeyModel.m in Sources */,
+				623E944B1E72879D00D9CF1F /* CommonVM.m in Sources */,
 				627C3DF31E715260003E1941 /* AppDelegate+DataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

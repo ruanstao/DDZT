@@ -8,15 +8,15 @@
 
 
 #import "AppDelegate+Supplement.h"
-#import "AppDelegate+JPush.h"
-#import "RSAEncryptor.h"
-
+#import "CommonVM.h"
 
 @implementation AppDelegate (Supplement)
 
-- (void)loadRSAKey
+- (void)loadCommonInfo
 {
-
+    [CommonVM getCommonInfoCompletion:^(BOOL finish, id obj) {
+        
+    }];
 }
 //- (void)launchTabBarController {
 //    NSString *workNo = [[NSUserDefaults standardUserDefaults] objectForKey:MOA_Uset_WorkerNo];

@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 @class BasePageInfo;
-@interface BaseModel : NSObject
+@interface BaseModel : JSONModel
 @property (nonatomic,assign) BOOL success;
 @property (nonatomic,strong) NSString *errorCode;
 @property (nonatomic,strong) NSString *errorMsg;
 @property (nonatomic,assign) NSInteger showType; //0不展示1展示errorMsg
 @property (nonatomic,strong) BasePageInfo *pageInfo;
-@property (nonatomic,strong) id data;
+//@property (nonatomic,strong) id data; //子类自实现
 
 @end
 

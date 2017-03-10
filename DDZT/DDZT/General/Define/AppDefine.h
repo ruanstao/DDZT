@@ -22,5 +22,11 @@
 #define mScreenWidth          ([UIScreen mainScreen].bounds.size.width)
 #define mScreenHeight         ([UIScreen mainScreen].bounds.size.height)
 
+#define mSystemVersion   ([[UIDevice currentDevice] systemVersion])
+#define mDeviceModel     ([[UIDevice currentDevice] model])
+#define mDeviceName      ([[UIDevice currentDevice] name])
+#define mCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define mAPPBundleVersion      [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define mAPPVersion      [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 #endif /* AppDefine_h */

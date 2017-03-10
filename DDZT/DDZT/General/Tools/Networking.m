@@ -97,10 +97,20 @@
 //    return _urlSessionManager;
 //}
 
+- (void)addCommonInfoInHeader
+{
+    NSDictionary *header =@{@"versionCode":mAPPVersion};
+    [header enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        [self.httpSessionManager.requestSerializer setValue:obj forHTTPHeaderField:key];
+    }];
+}
+
 - (void)requestDataWithParames:(NSDictionary *)params path:(NSString*)urlPath complete:(successBlock)success fail:(failureBlock)fail
 {
-
-   NSURLSessionDataTask *dataTask =  [self.httpSessionManager POST:urlPath parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+    
+    [self addCommonInfoInHeader];
+//   NSURLSessionDataTask *dataTask =
+    [self.httpSessionManager POST:urlPath parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
        
    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
        if ( ((NSHTTPURLResponse *)task.response).statusCode == 200) {

@@ -38,6 +38,6 @@
 // */
 //- (void)talkingData;
 
-- (void)loadRSAKey;
+- (void)loadCommonInfo;
 
 @end
