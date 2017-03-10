@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^successBlock)(BOOL success,id obj);
-typedef void(^failureBlock)(NSError *error);
+typedef void(^successBlock)(id obj);
+typedef void(^failureBlock)(NSString *error);
 
 @interface Networking : NSObject
 

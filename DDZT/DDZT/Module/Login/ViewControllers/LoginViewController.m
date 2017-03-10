@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "LoginVM.h"
 @interface LoginViewController ()
 
 @end
@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [LoginVM loginWithPhone:@"13632889390"];
 }
 
 - (void)didReceiveMemoryWarning {

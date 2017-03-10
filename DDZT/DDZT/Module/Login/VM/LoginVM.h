@@ -10,4 +10,6 @@
 
 @interface LoginVM : NSObject
 
++ (void)loginWithPhone:(NSString *)phoneNum completion:(void(^)(BOOL finish, id obj))completion;
+
 @end

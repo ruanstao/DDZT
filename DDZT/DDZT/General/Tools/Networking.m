@@ -82,8 +82,10 @@
 
 - (AFHTTPSessionManager *)httpSessionManager
 {
-    if (_httpSessionManager) {
+    if (_httpSessionManager == nil) {
         _httpSessionManager = [AFHTTPSessionManager manager];
+        _httpSessionManager.requestSerializer.timeoutInterval = 60;
+        _httpSessionManager.responseSerializer= [AFJSONResponseSerializer serializer];
     }
     return _httpSessionManager;
 }
@@ -98,13 +100,29 @@
 - (void)requestDataWithParames:(NSDictionary *)params path:(NSString*)urlPath complete:(successBlock)success fail:(failureBlock)fail
 {
 
-   NSURLSessionDataTask *dataTask =  [self.httpSessionManager dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlPath]] completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-       NSLog(@"response: %@",response);
-       NSLog(@"responseObject: %@",responseObject);
-       NSLog(@"error: %@",error);
+   NSURLSessionDataTask *dataTask =  [self.httpSessionManager POST:urlPath parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
        
-    }];
-    [dataTask resume];
+   } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+       if ( ((NSHTTPURLResponse *)task.response).statusCode == 200) {
+           if([responseObject isKindOfClass:[NSDictionary class]])
+           {
+               NSDictionary *resultDic = (NSDictionary *)responseObject;
+               if (resultDic[@"success"] != nil) {
+                   success(resultDic);
+               } else {
+                   fail(resultDic[@"errorMsg"]);
+               }
+           } else {
+               fail(@"error");
+           }
+           
+       } else {
+           fail(@"error");
+       }
+   } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+       fail([error description]);
+   }];
+    
 }
 
 @end
