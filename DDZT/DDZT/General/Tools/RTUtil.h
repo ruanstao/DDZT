@@ -16,4 +16,8 @@
 
 + (void)hideHudProgeressInView:(UIView *)view andWiatString:(NSString *)string;
 
++ (NSString *)encrypString:(NSString *)string;
+
++ (NSString *)decrypString:(NSString *)string;
+
 @end

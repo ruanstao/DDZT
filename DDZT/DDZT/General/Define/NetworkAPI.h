@@ -10,7 +10,7 @@
 #define NetworkAPI_h
 
 //home
-#define Host "16q7q00725.iok.la"
+#define Host @"16q7q00725.iok.la"
 //company
 //#define Host "172.16.6.88:8088"
 

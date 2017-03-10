@@ -8,4 +8,10 @@ target 'DDZT' do
     pod 'MBProgressHUD'
     pod 'FMDB'
     pod 'BaiduMapKit' , '~>3.1.0' #百度地图SDK
+    pod 'MJExtension'
+    pod 'BlocksKit'
+    pod 'SDWebImage', '~>3.7'
+    pod 'MJRefresh'
+    
+    pod 'KYCuteView'
 end

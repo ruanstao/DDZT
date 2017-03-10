@@ -17,11 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)encry:(id)sender {
+
+    self.publabel.text = [RTUtil encrypString:self.textF.text];
+}
+
+- (IBAction)decry:(id)sender {
+
+    self.prilabel.text = [RTUtil decrypString:self.publabel.text];
 }
 
 /*

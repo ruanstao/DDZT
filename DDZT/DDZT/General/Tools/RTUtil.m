@@ -8,7 +8,7 @@
 
 #import "RTUtil.h"
 #import "MBProgressHUD.h"
-
+#import "RSAEncryptor.h"
 @implementation RTUtil
 
 + (void)showHudProgeressInView:(UIView *)view
@@ -33,6 +33,18 @@
 + (void)hideHudProgeressInView:(UIView *)view andWiatString:(NSString *)string
 {
     [MBProgressHUD hideHUDForView:view animated:YES];
+}
+
++ (NSString *)encrypString:(NSString *)string
+{
+    NSString *pubpath = [[NSBundle mainBundle] pathForResource:@"iOS_public_key" ofType:@"cer"];
+    return [RSAEncryptor encryptString: string publicKeyWithContentsOfFile:pubpath];
+}
+
++ (NSString *)decrypString:(NSString *)string
+{
+    NSString *pripath = [[NSBundle mainBundle] pathForResource:@"iOS_private_key" ofType:@"p12"];
+    return [RSAEncryptor decryptString:string privateKeyWithContentsOfFile:pripath password:@"123"];
 }
 
 @end

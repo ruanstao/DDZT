@@ -9,14 +9,14 @@
 #import "LoginVM.h"
 
 @implementation LoginVM
-- (void)login
+- (void)loginWithPhone:(NSString *)phoneNum
 {
-    NSLog(@"%@",GetPublicKeyApi);
-//    [[Networking sharedInstance] requestDataWithParames:@{} path:GetPublicKeyApi complete:^(BOOL success, id obj) {
-//        
-//    } fail:^(NSError *error) {
-//        
-//    }];
+    
+    [[Networking sharedInstance] requestDataWithParames:@{@"phone":@"13632889390",@"test":@"1"} path:GetPublicKeyApi complete:^(BOOL success, id obj) {
+        
+    } fail:^(NSError *error) {
+        
+    }];
 }
 @end
 

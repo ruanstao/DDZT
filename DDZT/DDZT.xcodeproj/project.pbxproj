@@ -41,9 +41,17 @@
 		62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */; };
 		62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC41E6EA1C800A6FC9F /* Networking.m */; };
 		62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC71E6EA2A400A6FC9F /* RTUtil.m */; };
-		62A8FB661E6EFDB000476C06 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB611E6EFDB000476C06 /* BaseNavigationController.m */; };
-		62A8FB671E6EFDB000476C06 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB631E6EFDB000476C06 /* BaseTabBarController.m */; };
-		62A8FB681E6EFDB000476C06 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB651E6EFDB000476C06 /* BaseViewController.m */; };
+		627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD41E71211A003E1941 /* BaseNavigationController.m */; };
+		627C3DDA1E71211A003E1941 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD61E71211A003E1941 /* BaseTabBarController.m */; };
+		627C3DDB1E71211A003E1941 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DD81E71211A003E1941 /* BaseViewController.m */; };
+		627C3DDE1E712134003E1941 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DDD1E712134003E1941 /* BaseModel.m */; };
+		627C3DE21E714F5A003E1941 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627C3DE11E714F5A003E1941 /* Security.framework */; };
+		627C3DF21E715260003E1941 /* AppDelegate+BaiduMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DE51E715260003E1941 /* AppDelegate+BaiduMap.m */; };
+		627C3DF31E715260003E1941 /* AppDelegate+DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DE71E715260003E1941 /* AppDelegate+DataBase.m */; };
+		627C3DF51E715260003E1941 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DEB1E715260003E1941 /* AppDelegate+JPush.m */; };
+		627C3DF71E715260003E1941 /* AppDelegate+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DEF1E715260003E1941 /* AppDelegate+Supplement.m */; };
+		627C3DFA1E715661003E1941 /* iOS_public_key.cer in Resources */ = {isa = PBXBuildFile; fileRef = 627C3DF91E715661003E1941 /* iOS_public_key.cer */; };
+		627C3DFC1E71570A003E1941 /* iOS_private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 627C3DFB1E71570A003E1941 /* iOS_private_key.p12 */; };
 		62A8FB6E1E6EFE7E00476C06 /* LoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */; };
 		C306E6C0CB0837EBDDD1BAEC /* libPods-DDZT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78083D34DACD83D101B94B /* libPods-DDZT.a */; };
 /* End PBXBuildFile section */
@@ -139,12 +147,25 @@
 		62134EC61E6EA2A400A6FC9F /* RTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUtil.h; sourceTree = "<group>"; };
 		62134EC71E6EA2A400A6FC9F /* RTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUtil.m; sourceTree = "<group>"; };
 		62134ECA1E6EA6C000A6FC9F /* DDZT-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZT-PrefixHeader.pch"; sourceTree = "<group>"; };
-		62A8FB601E6EFDB000476C06 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		62A8FB611E6EFDB000476C06 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		62A8FB621E6EFDB000476C06 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
-		62A8FB631E6EFDB000476C06 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
-		62A8FB641E6EFDB000476C06 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		62A8FB651E6EFDB000476C06 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		627C3DD31E71211A003E1941 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		627C3DD41E71211A003E1941 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		627C3DD51E71211A003E1941 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		627C3DD61E71211A003E1941 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		627C3DD71E71211A003E1941 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		627C3DD81E71211A003E1941 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		627C3DDC1E712134003E1941 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		627C3DDD1E712134003E1941 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		627C3DE11E714F5A003E1941 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		627C3DE41E715260003E1941 /* AppDelegate+BaiduMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+BaiduMap.h"; sourceTree = "<group>"; };
+		627C3DE51E715260003E1941 /* AppDelegate+BaiduMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+BaiduMap.m"; sourceTree = "<group>"; };
+		627C3DE61E715260003E1941 /* AppDelegate+DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+DataBase.h"; sourceTree = "<group>"; };
+		627C3DE71E715260003E1941 /* AppDelegate+DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DataBase.m"; sourceTree = "<group>"; };
+		627C3DEA1E715260003E1941 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
+		627C3DEB1E715260003E1941 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
+		627C3DEE1E715260003E1941 /* AppDelegate+Supplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Supplement.h"; sourceTree = "<group>"; };
+		627C3DEF1E715260003E1941 /* AppDelegate+Supplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Supplement.m"; sourceTree = "<group>"; };
+		627C3DF91E715661003E1941 /* iOS_public_key.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_public_key.cer; sourceTree = "<group>"; };
+		627C3DFB1E71570A003E1941 /* iOS_private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_private_key.p12; sourceTree = "<group>"; };
 		62A8FB6C1E6EFE7E00476C06 /* LoginVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVM.h; sourceTree = "<group>"; };
 		62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVM.m; sourceTree = "<group>"; };
 		DACC5E761CAA6475C02645ED /* Pods-DDZT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDZT.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DDZT/Pods-DDZT.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627C3DE21E714F5A003E1941 /* Security.framework in Frameworks */,
 				C306E6C0CB0837EBDDD1BAEC /* libPods-DDZT.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +210,7 @@
 		50AB0C90BF19042B0691AAD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				627C3DE11E714F5A003E1941 /* Security.framework */,
 				2C78083D34DACD83D101B94B /* libPods-DDZT.a */,
 			);
 			name = Frameworks;
@@ -223,6 +246,7 @@
 				62134E461E6E7C1600A6FC9F /* Module */,
 				62134E101E6E66FC00A6FC9F /* AppDelegate.h */,
 				62134E111E6E66FC00A6FC9F /* AppDelegate.m */,
+				627C3DE31E715260003E1941 /* AppDelegate+ */,
 				62134E161E6E66FC00A6FC9F /* Main.storyboard */,
 				62134E1C1E6E66FC00A6FC9F /* Assets.xcassets */,
 				62134E1E1E6E66FC00A6FC9F /* LaunchScreen.storyboard */,
@@ -293,7 +317,7 @@
 		62134E4D1E6E7DAB00A6FC9F /* General */ = {
 			isa = PBXGroup;
 			children = (
-				62A8FB5F1E6EFDB000476C06 /* BaseViewControllers */,
+				627C3DD21E71211A003E1941 /* BaseViewAndModel */,
 				62134EC21E6EA1A900A6FC9F /* Tools */,
 				62134E651E6E8F3100A6FC9F /* Category */,
 				62134E9F1E6E8F3100A6FC9F /* Define */,
@@ -373,6 +397,8 @@
 			children = (
 				62134EBF1E6E9AC500A6FC9F /* RSAEncryptor.h */,
 				62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */,
+				627C3DF91E715661003E1941 /* iOS_public_key.cer */,
+				627C3DFB1E71570A003E1941 /* iOS_private_key.p12 */,
 			);
 			path = RSAEncryptor;
 			sourceTree = "<group>";
@@ -388,17 +414,34 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		62A8FB5F1E6EFDB000476C06 /* BaseViewControllers */ = {
+		627C3DD21E71211A003E1941 /* BaseViewAndModel */ = {
 			isa = PBXGroup;
 			children = (
-				62A8FB601E6EFDB000476C06 /* BaseNavigationController.h */,
-				62A8FB611E6EFDB000476C06 /* BaseNavigationController.m */,
-				62A8FB621E6EFDB000476C06 /* BaseTabBarController.h */,
-				62A8FB631E6EFDB000476C06 /* BaseTabBarController.m */,
-				62A8FB641E6EFDB000476C06 /* BaseViewController.h */,
-				62A8FB651E6EFDB000476C06 /* BaseViewController.m */,
+				627C3DD31E71211A003E1941 /* BaseNavigationController.h */,
+				627C3DD41E71211A003E1941 /* BaseNavigationController.m */,
+				627C3DD51E71211A003E1941 /* BaseTabBarController.h */,
+				627C3DD61E71211A003E1941 /* BaseTabBarController.m */,
+				627C3DD71E71211A003E1941 /* BaseViewController.h */,
+				627C3DD81E71211A003E1941 /* BaseViewController.m */,
+				627C3DDC1E712134003E1941 /* BaseModel.h */,
+				627C3DDD1E712134003E1941 /* BaseModel.m */,
 			);
-			path = BaseViewControllers;
+			path = BaseViewAndModel;
+			sourceTree = "<group>";
+		};
+		627C3DE31E715260003E1941 /* AppDelegate+ */ = {
+			isa = PBXGroup;
+			children = (
+				627C3DE41E715260003E1941 /* AppDelegate+BaiduMap.h */,
+				627C3DE51E715260003E1941 /* AppDelegate+BaiduMap.m */,
+				627C3DE61E715260003E1941 /* AppDelegate+DataBase.h */,
+				627C3DE71E715260003E1941 /* AppDelegate+DataBase.m */,
+				627C3DEA1E715260003E1941 /* AppDelegate+JPush.h */,
+				627C3DEB1E715260003E1941 /* AppDelegate+JPush.m */,
+				627C3DEE1E715260003E1941 /* AppDelegate+Supplement.h */,
+				627C3DEF1E715260003E1941 /* AppDelegate+Supplement.m */,
+			);
+			path = "AppDelegate+";
 			sourceTree = "<group>";
 		};
 		62A8FB691E6EFE6400476C06 /* Model */ = {
@@ -536,7 +579,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				62134E5D1E6E7F2300A6FC9F /* Login.storyboard in Resources */,
+				627C3DFC1E71570A003E1941 /* iOS_private_key.p12 in Resources */,
 				62134E201E6E66FC00A6FC9F /* LaunchScreen.storyboard in Resources */,
+				627C3DFA1E715661003E1941 /* iOS_public_key.cer in Resources */,
 				62134E1D1E6E66FC00A6FC9F /* Assets.xcassets in Resources */,
 				62134E181E6E66FC00A6FC9F /* Main.storyboard in Resources */,
 			);
@@ -613,23 +658,27 @@
 			files = (
 				62A8FB6E1E6EFE7E00476C06 /* LoginVM.m in Sources */,
 				62134E121E6E66FC00A6FC9F /* AppDelegate.m in Sources */,
+				627C3DF51E715260003E1941 /* AppDelegate+JPush.m in Sources */,
 				62134EB71E6E8F3100A6FC9F /* UIView+Frame.m in Sources */,
+				627C3DDE1E712134003E1941 /* BaseModel.m in Sources */,
 				62134EB31E6E8F3100A6FC9F /* UITextField+LimitLength.m in Sources */,
+				627C3DDA1E71211A003E1941 /* BaseTabBarController.m in Sources */,
 				62134EB51E6E8F3100A6FC9F /* UIView+Addition.m in Sources */,
 				62134EA01E6E8F3100A6FC9F /* CALayer+Additions.m in Sources */,
 				62134EA41E6E8F3100A6FC9F /* NSDictionary+RtDictionary.m in Sources */,
 				62134EB11E6E8F3100A6FC9F /* UITableView+TouchView.m in Sources */,
+				627C3DDB1E71211A003E1941 /* BaseViewController.m in Sources */,
 				62134EB81E6E8F3100A6FC9F /* UIView+Layer.m in Sources */,
 				62134EBB1E6E8F3100A6FC9F /* UIViewController+TopVC.m in Sources */,
-				62A8FB661E6EFDB000476C06 /* BaseNavigationController.m in Sources */,
-				62A8FB671E6EFDB000476C06 /* BaseTabBarController.m in Sources */,
 				62134EA21E6E8F3100A6FC9F /* NSData+Addition.m in Sources */,
 				62134EA81E6E8F3100A6FC9F /* NSTimer+Addition.m in Sources */,
 				62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */,
 				62134EAC1E6E8F3100A6FC9F /* UIImage+Rendering.m in Sources */,
+				627C3DF21E715260003E1941 /* AppDelegate+BaiduMap.m in Sources */,
+				627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */,
+				627C3DF71E715260003E1941 /* AppDelegate+Supplement.m in Sources */,
 				62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */,
 				62134EA61E6E8F3100A6FC9F /* NSString+MD5.m in Sources */,
-				62A8FB681E6EFDB000476C06 /* BaseViewController.m in Sources */,
 				62134EB61E6E8F3100A6FC9F /* UIView+Animation.m in Sources */,
 				62134EAD1E6E8F3100A6FC9F /* UINavigationBar+Awesome.m in Sources */,
 				62134EB41E6E8F3100A6FC9F /* UITextView+Placeholder.m in Sources */,
@@ -643,6 +692,7 @@
 				62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */,
 				62134EAA1E6E8F3100A6FC9F /* UIButton+Block.m in Sources */,
 				62134E5B1E6E7EFD00A6FC9F /* LoginViewController.m in Sources */,
+				627C3DF31E715260003E1941 /* AppDelegate+DataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
