@@ -38,9 +38,17 @@
 		62134EB91E6E8F3100A6FC9F /* UIView+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E9A1E6E8F3100A6FC9F /* UIView+Runtime.m */; };
 		62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E9C1E6E8F3100A6FC9F /* UIView+ViewController.m */; };
 		62134EBB1E6E8F3100A6FC9F /* UIViewController+TopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134E9E1E6E8F3100A6FC9F /* UIViewController+TopVC.m */; };
-		62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */; };
 		62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC41E6EA1C800A6FC9F /* Networking.m */; };
 		62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62134EC71E6EA2A400A6FC9F /* RTUtil.m */; };
+		6232D5DD1E73D91400D68A74 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232D5DC1E73D91400D68A74 /* MainTabBarViewController.m */; };
+		6232D5DF1E73D97100D68A74 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6232D5DE1E73D97100D68A74 /* MainTabBar.storyboard */; };
+		6232D5E61E73EC1C00D68A74 /* Accoud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6232D5E11E73EC1C00D68A74 /* Accoud.storyboard */; };
+		6232D5E91E73EC8000D68A74 /* AccountInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232D5E81E73EC8000D68A74 /* AccountInfoViewController.m */; };
+		6232D5F41E73F37700D68A74 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232D5ED1E73F37700D68A74 /* GTMBase64.m */; };
+		6232D5F51E73F37700D68A74 /* iOS_private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 6232D5F01E73F37700D68A74 /* iOS_private_key.p12 */; };
+		6232D5F61E73F37700D68A74 /* iOS_public_key.cer in Resources */ = {isa = PBXBuildFile; fileRef = 6232D5F11E73F37700D68A74 /* iOS_public_key.cer */; };
+		6232D5F71E73F37700D68A74 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232D5F31E73F37700D68A74 /* RSAEncryptor.m */; };
+		6232D5FA1E73F95500D68A74 /* RegisteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6232D5F91E73F95500D68A74 /* RegisteModel.m */; };
 		623E94481E72514100D9CF1F /* RSAKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E94471E72514100D9CF1F /* RSAKeyModel.m */; };
 		623E944B1E72879D00D9CF1F /* CommonVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E944A1E72879D00D9CF1F /* CommonVM.m */; };
 		623E944E1E72906E00D9CF1F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 623E944D1E72906E00D9CF1F /* UserModel.m */; };
@@ -56,8 +64,6 @@
 		627C3DF31E715260003E1941 /* AppDelegate+DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DE71E715260003E1941 /* AppDelegate+DataBase.m */; };
 		627C3DF51E715260003E1941 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DEB1E715260003E1941 /* AppDelegate+JPush.m */; };
 		627C3DF71E715260003E1941 /* AppDelegate+Supplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 627C3DEF1E715260003E1941 /* AppDelegate+Supplement.m */; };
-		627C3DFA1E715661003E1941 /* iOS_public_key.cer in Resources */ = {isa = PBXBuildFile; fileRef = 627C3DF91E715661003E1941 /* iOS_public_key.cer */; };
-		627C3DFC1E71570A003E1941 /* iOS_private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 627C3DFB1E71570A003E1941 /* iOS_private_key.p12 */; };
 		62A8FB6E1E6EFE7E00476C06 /* LoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */; };
 		C306E6C0CB0837EBDDD1BAEC /* libPods-DDZT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78083D34DACD83D101B94B /* libPods-DDZT.a */; };
 /* End PBXBuildFile section */
@@ -146,13 +152,26 @@
 		62134E9E1E6E8F3100A6FC9F /* UIViewController+TopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopVC.m"; sourceTree = "<group>"; };
 		62134EBC1E6E8F5400A6FC9F /* AppDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
 		62134EBD1E6E93B300A6FC9F /* NetworkAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkAPI.h; sourceTree = "<group>"; };
-		62134EBF1E6E9AC500A6FC9F /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
-		62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
 		62134EC31E6EA1C800A6FC9F /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		62134EC41E6EA1C800A6FC9F /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networking.m; sourceTree = "<group>"; };
 		62134EC61E6EA2A400A6FC9F /* RTUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUtil.h; sourceTree = "<group>"; };
 		62134EC71E6EA2A400A6FC9F /* RTUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUtil.m; sourceTree = "<group>"; };
 		62134ECA1E6EA6C000A6FC9F /* DDZT-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDZT-PrefixHeader.pch"; sourceTree = "<group>"; };
+		6232D5DB1E73D91400D68A74 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		6232D5DC1E73D91400D68A74 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		6232D5DE1E73D97100D68A74 /* MainTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
+		6232D5E11E73EC1C00D68A74 /* Accoud.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Accoud.storyboard; sourceTree = "<group>"; };
+		6232D5E71E73EC8000D68A74 /* AccountInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfoViewController.h; sourceTree = "<group>"; };
+		6232D5E81E73EC8000D68A74 /* AccountInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfoViewController.m; sourceTree = "<group>"; };
+		6232D5EC1E73F37700D68A74 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		6232D5ED1E73F37700D68A74 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		6232D5EE1E73F37700D68A74 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		6232D5F01E73F37700D68A74 /* iOS_private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_private_key.p12; sourceTree = "<group>"; };
+		6232D5F11E73F37700D68A74 /* iOS_public_key.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_public_key.cer; sourceTree = "<group>"; };
+		6232D5F21E73F37700D68A74 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		6232D5F31E73F37700D68A74 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		6232D5F81E73F95500D68A74 /* RegisteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteModel.h; sourceTree = "<group>"; };
+		6232D5F91E73F95500D68A74 /* RegisteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteModel.m; sourceTree = "<group>"; };
 		623E94451E72329B00D9CF1F /* KeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyDefine.h; sourceTree = "<group>"; };
 		623E94461E72514100D9CF1F /* RSAKeyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAKeyModel.h; sourceTree = "<group>"; };
 		623E94471E72514100D9CF1F /* RSAKeyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAKeyModel.m; sourceTree = "<group>"; };
@@ -183,8 +202,6 @@
 		627C3DEB1E715260003E1941 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
 		627C3DEE1E715260003E1941 /* AppDelegate+Supplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Supplement.h"; sourceTree = "<group>"; };
 		627C3DEF1E715260003E1941 /* AppDelegate+Supplement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Supplement.m"; sourceTree = "<group>"; };
-		627C3DF91E715661003E1941 /* iOS_public_key.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_public_key.cer; sourceTree = "<group>"; };
-		627C3DFB1E71570A003E1941 /* iOS_private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_private_key.p12; sourceTree = "<group>"; };
 		62A8FB6C1E6EFE7E00476C06 /* LoginVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVM.h; sourceTree = "<group>"; };
 		62A8FB6D1E6EFE7E00476C06 /* LoginVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVM.m; sourceTree = "<group>"; };
 		DACC5E761CAA6475C02645ED /* Pods-DDZT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDZT.release.xcconfig"; path = "../Pods/Target Support Files/Pods-DDZT/Pods-DDZT.release.xcconfig"; sourceTree = "<group>"; };
@@ -307,6 +324,8 @@
 		62134E461E6E7C1600A6FC9F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				6232D5D61E73D8F900D68A74 /* MainTabbar */,
+				6232D5E01E73EC1C00D68A74 /* Accoud */,
 				62134E471E6E7D1D00A6FC9F /* Login */,
 			);
 			path = Module;
@@ -351,7 +370,7 @@
 		62134E4E1E6E7DAB00A6FC9F /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				62134EBE1E6E9AC500A6FC9F /* RSAEncryptor */,
+				6232D5EA1E73F37700D68A74 /* Encryptor */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -416,17 +435,6 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
-		62134EBE1E6E9AC500A6FC9F /* RSAEncryptor */ = {
-			isa = PBXGroup;
-			children = (
-				62134EBF1E6E9AC500A6FC9F /* RSAEncryptor.h */,
-				62134EC01E6E9AC500A6FC9F /* RSAEncryptor.m */,
-				627C3DF91E715661003E1941 /* iOS_public_key.cer */,
-				627C3DFB1E71570A003E1941 /* iOS_private_key.p12 */,
-			);
-			path = RSAEncryptor;
-			sourceTree = "<group>";
-		};
 		62134EC21E6EA1A900A6FC9F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +444,120 @@
 				62134EC71E6EA2A400A6FC9F /* RTUtil.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		6232D5D61E73D8F900D68A74 /* MainTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5D71E73D8F900D68A74 /* Model */,
+				6232D5D81E73D8F900D68A74 /* View */,
+				6232D5D91E73D8F900D68A74 /* ViewControllers */,
+				6232D5DA1E73D8F900D68A74 /* VM */,
+				6232D5DE1E73D97100D68A74 /* MainTabBar.storyboard */,
+			);
+			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		6232D5D71E73D8F900D68A74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6232D5D81E73D8F900D68A74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6232D5D91E73D8F900D68A74 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5DB1E73D91400D68A74 /* MainTabBarViewController.h */,
+				6232D5DC1E73D91400D68A74 /* MainTabBarViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6232D5DA1E73D8F900D68A74 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6232D5E01E73EC1C00D68A74 /* Accoud */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5E11E73EC1C00D68A74 /* Accoud.storyboard */,
+				6232D5E21E73EC1C00D68A74 /* Model */,
+				6232D5E31E73EC1C00D68A74 /* View */,
+				6232D5E41E73EC1C00D68A74 /* ViewControllers */,
+				6232D5E51E73EC1C00D68A74 /* VM */,
+			);
+			path = Accoud;
+			sourceTree = "<group>";
+		};
+		6232D5E21E73EC1C00D68A74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6232D5E31E73EC1C00D68A74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6232D5E41E73EC1C00D68A74 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5E71E73EC8000D68A74 /* AccountInfoViewController.h */,
+				6232D5E81E73EC8000D68A74 /* AccountInfoViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6232D5E51E73EC1C00D68A74 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6232D5EA1E73F37700D68A74 /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5EB1E73F37700D68A74 /* GTMBase64 */,
+				6232D5EF1E73F37700D68A74 /* RSAEncryptor */,
+			);
+			path = Encryptor;
+			sourceTree = "<group>";
+		};
+		6232D5EB1E73F37700D68A74 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5EC1E73F37700D68A74 /* GTMBase64.h */,
+				6232D5ED1E73F37700D68A74 /* GTMBase64.m */,
+				6232D5EE1E73F37700D68A74 /* GTMDefines.h */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		6232D5EF1E73F37700D68A74 /* RSAEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				6232D5F01E73F37700D68A74 /* iOS_private_key.p12 */,
+				6232D5F11E73F37700D68A74 /* iOS_public_key.cer */,
+				6232D5F21E73F37700D68A74 /* RSAEncryptor.h */,
+				6232D5F31E73F37700D68A74 /* RSAEncryptor.m */,
+			);
+			path = RSAEncryptor;
 			sourceTree = "<group>";
 		};
 		627C3DD21E71211A003E1941 /* BaseViewAndModel */ = {
@@ -479,6 +601,8 @@
 				623E944D1E72906E00D9CF1F /* UserModel.m */,
 				623E944F1E72963000D9CF1F /* TokenModel.h */,
 				623E94501E72963000D9CF1F /* TokenModel.m */,
+				6232D5F81E73F95500D68A74 /* RegisteModel.h */,
+				6232D5F91E73F95500D68A74 /* RegisteModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -611,11 +735,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62134E5D1E6E7F2300A6FC9F /* Login.storyboard in Resources */,
-				627C3DFC1E71570A003E1941 /* iOS_private_key.p12 in Resources */,
 				62134E201E6E66FC00A6FC9F /* LaunchScreen.storyboard in Resources */,
-				627C3DFA1E715661003E1941 /* iOS_public_key.cer in Resources */,
+				6232D5DF1E73D97100D68A74 /* MainTabBar.storyboard in Resources */,
+				6232D5F61E73F37700D68A74 /* iOS_public_key.cer in Resources */,
 				62134E1D1E6E66FC00A6FC9F /* Assets.xcassets in Resources */,
+				6232D5F51E73F37700D68A74 /* iOS_private_key.p12 in Resources */,
 				62134E181E6E66FC00A6FC9F /* Main.storyboard in Resources */,
+				6232D5E61E73EC1C00D68A74 /* Accoud.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,11 +815,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62A8FB6E1E6EFE7E00476C06 /* LoginVM.m in Sources */,
+				6232D5DD1E73D91400D68A74 /* MainTabBarViewController.m in Sources */,
 				62134E121E6E66FC00A6FC9F /* AppDelegate.m in Sources */,
 				627C3DF51E715260003E1941 /* AppDelegate+JPush.m in Sources */,
 				62134EB71E6E8F3100A6FC9F /* UIView+Frame.m in Sources */,
 				627C3DDE1E712134003E1941 /* BaseModel.m in Sources */,
 				62134EB31E6E8F3100A6FC9F /* UITextField+LimitLength.m in Sources */,
+				6232D5F41E73F37700D68A74 /* GTMBase64.m in Sources */,
 				623E944E1E72906E00D9CF1F /* UserModel.m in Sources */,
 				627C3DDA1E71211A003E1941 /* BaseTabBarController.m in Sources */,
 				62134EB51E6E8F3100A6FC9F /* UIView+Addition.m in Sources */,
@@ -704,14 +832,17 @@
 				62134EB81E6E8F3100A6FC9F /* UIView+Layer.m in Sources */,
 				62134EBB1E6E8F3100A6FC9F /* UIViewController+TopVC.m in Sources */,
 				62134EA21E6E8F3100A6FC9F /* NSData+Addition.m in Sources */,
+				6232D5E91E73EC8000D68A74 /* AccountInfoViewController.m in Sources */,
 				62134EA81E6E8F3100A6FC9F /* NSTimer+Addition.m in Sources */,
 				62134EC51E6EA1C800A6FC9F /* Networking.m in Sources */,
 				62134EAC1E6E8F3100A6FC9F /* UIImage+Rendering.m in Sources */,
 				623E94541E72AB9900D9CF1F /* RigisterViewController.m in Sources */,
+				6232D5F71E73F37700D68A74 /* RSAEncryptor.m in Sources */,
 				627C3DF21E715260003E1941 /* AppDelegate+BaiduMap.m in Sources */,
 				627C3DD91E71211A003E1941 /* BaseNavigationController.m in Sources */,
 				623E94571E72ABA900D9CF1F /* ForgetPwdViewController.m in Sources */,
 				623E94511E72963000D9CF1F /* TokenModel.m in Sources */,
+				6232D5FA1E73F95500D68A74 /* RegisteModel.m in Sources */,
 				627C3DF71E715260003E1941 /* AppDelegate+Supplement.m in Sources */,
 				62134EBA1E6E8F3100A6FC9F /* UIView+ViewController.m in Sources */,
 				62134EA61E6E8F3100A6FC9F /* NSString+MD5.m in Sources */,
@@ -722,7 +853,6 @@
 				62134EAE1E6E8F3100A6FC9F /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				62134EB91E6E8F3100A6FC9F /* UIView+Runtime.m in Sources */,
 				62134E0F1E6E66FC00A6FC9F /* main.m in Sources */,
-				62134EC11E6E9AC500A6FC9F /* RSAEncryptor.m in Sources */,
 				62134E1B1E6E66FC00A6FC9F /* DDZT.xcdatamodeld in Sources */,
 				62134EAB1E6E8F3100A6FC9F /* UICollectionViewCell+Create.m in Sources */,
 				62134EC81E6EA2A400A6FC9F /* RTUtil.m in Sources */,
@@ -886,7 +1016,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DDZT/DDZT-PrefixHeader.pch";
 				INFOPLIST_FILE = DDZT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rt.DDZT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.rt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDZT/DDZT-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -906,7 +1036,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DDZT/DDZT-PrefixHeader.pch";
 				INFOPLIST_FILE = DDZT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rt.DDZT;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.rt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDZT/DDZT-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

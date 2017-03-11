@@ -10,9 +10,10 @@
 #import "RSAKeyModel.h"
 #import "UserModel.h"
 #import "TokenModel.h"
+#import "RegisteModel.h"
 
 typedef enum : NSUInteger {
-    GetSMSForLogin = 1,//1,获取注册验证码 2,找回密码
+    GetSMSForRigiste = 1,//1,获取注册验证码 2,找回密码
     GetSMSForFindPwd = 2,
 } GetSMSType;
 

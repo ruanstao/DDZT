@@ -2,4 +2,564 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/General/BaseViewAndModel/CommonVM.m"
+            timestampString = "510910324.29862"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "+getCommonInfoCompletion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/MainTabbar/ViewControllers/MainTabBarViewController.m"
+            timestampString = "510908843.42295"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "+loginWithPhone:passWord:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LoginVM loginWithPhone:passWord:completion:]"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.467631"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46+[LoginVM loginWithPhone:passWord:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.471031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "+loginWithParams:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LoginVM loginWithParams:completion:]"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.475762"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38+[LoginVM loginWithParams:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.479023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "+registerWithParams:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "+registerWithPhone:captchaNumber:passWord:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63+[LoginVM registerWithPhone:captchaNumber:passWord:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.491229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "317">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63+[LoginVM registerWithPhone:captchaNumber:passWord:completion:]_block_invoke_2"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.493816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "+registerWithPhone:captchaNumber:passWord:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LoginVM registerWithPhone:captchaNumber:passWord:completion:]"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.501231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "173">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63+[LoginVM registerWithPhone:captchaNumber:passWord:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.505452"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "+getKeyPairWithPhone:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "+registerWithPhone:captchaNumber:passWord:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "+registerWithParams:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LoginVM registerWithParams:completion:]"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.51928"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41+[LoginVM registerWithParams:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.522705"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "+loginWithPhone:passWord:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46+[LoginVM loginWithPhone:passWord:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.527964"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "314">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__46+[LoginVM loginWithPhone:passWord:completion:]_block_invoke_2"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.531043"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/ViewControllers/RigisterViewController.m"
+            timestampString = "510917358.803392"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-rigisterAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/ViewControllers/RigisterViewController.m"
+            timestampString = "510917358.803392"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-sendVerificationAction:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RigisterViewController sendVerificationAction:]"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/ViewControllers/RigisterViewController.m"
+                  timestampString = "510929384.543926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__49-[RigisterViewController sendVerificationAction:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/ViewControllers/RigisterViewController.m"
+                  timestampString = "510929384.546694"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510918205.359215"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "+getKeyPairWithPhone:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "+getKeyPairWithPhone:completion:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LoginVM getKeyPairWithPhone:completion:]"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.558112"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "801">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42+[LoginVM getKeyPairWithPhone:completion:]_block_invoke"
+                  moduleName = "DDZT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruanstao/Xcode/GitHub/DDZT/DDZT/DDZT/Module/Login/VM/LoginVM.m"
+                  timestampString = "510929384.560904"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "+getKeyPairWithPhone:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DDZT/DDZT/Module/Login/VM/LoginVM.m"
+            timestampString = "510928927.541414"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "+getKeyPairWithPhone:completion:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/JSONModel/JSONModel/JSONModel/JSONModel.m"
+            timestampString = "510929001.559274"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1375"
+            endingLineNumber = "1375"
+            landmarkName = "-initWithCoder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/JSONModel/JSONModel/JSONModel/JSONModel.m"
+            timestampString = "510929003.494255"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1393"
+            endingLineNumber = "1393"
+            landmarkName = "-encodeWithCoder:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

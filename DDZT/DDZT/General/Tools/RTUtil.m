@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 #import "RSAEncryptor.h"
 #import <CommonCrypto/CommonDigest.h>
-
+#import "GTMBase64.h"
 @implementation RTUtil
 
 + (void)showHudProgeressInView:(UIView *)view

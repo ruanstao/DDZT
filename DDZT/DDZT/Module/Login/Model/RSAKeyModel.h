@@ -14,7 +14,7 @@
 
 @end
 
-@interface KeysModel : NSObject
+@interface KeysModel : JSONModel
 
 @property (nonatomic,strong) NSString *publicKey;
 @property (nonatomic,strong) NSString *privateKey;

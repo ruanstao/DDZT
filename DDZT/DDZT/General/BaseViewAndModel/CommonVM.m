@@ -7,6 +7,8 @@
 //
 
 #import "CommonVM.h"
+#import "LoginViewController.h"
+#import "MainTabBarViewController.h"
 
 @implementation CommonVM
 + (void)getCommonInfoCompletion:(void(^)(BOOL finish, id obj))completion
@@ -25,5 +27,17 @@
     }];
 }
 
++ (void)loginSuccess
+{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+//    transitionFromViewController
+    window.rootViewController = [MainTabBarViewController createByNibFile];
+}
+
++ (void)logout
+{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    window.rootViewController = [LoginViewController createByNibFile];
+}
 
 @end

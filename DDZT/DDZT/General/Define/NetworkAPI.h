@@ -11,8 +11,9 @@
 
 //home
 //#define Host @"http://16q7q00725.iok.la"
+#define Host @"http://210.79.66.117:8088"
 //company
-#define Host @"http://172.16.6.88:8088"
+//#define Host @"http://172.16.6.88:8088"
 
 //获取初始化数据  
 #define CommonApi  [NSString stringWithFormat:@"%@%@",Host,@"/app/common/appInit"]

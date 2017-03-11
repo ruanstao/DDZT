@@ -7,8 +7,13 @@
 //
 
 #import "RigisterViewController.h"
-
+#import "LoginVM.h"
 @interface RigisterViewController ()
+@property (weak, nonatomic) IBOutlet UIView *loginView;
+@property (weak, nonatomic) IBOutlet UITextField *accountTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *confirmPasswordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *verifcationTextField;
 
 @end
 
@@ -37,4 +42,24 @@
 {
     return YES;
 }
+- (IBAction)sendVerificationAction:(UIButton *)sender {
+    [LoginVM getSMSWithPhone:self.accountTextField.text andType:GetSMSForRigiste completion:^(BOOL finish, RegisteModel *obj) {
+        if (finish) {
+            self.verifcationTextField.text = obj.data.captcha;
+        }
+    }];
+}
+- (IBAction)rigisterAction:(id)sender {
+    if (![self.passwordTextField.text isEqualToString:self.confirmPasswordTextField.text]) {
+        [RTUtil showHudProgeressInView:self.view andWiatString:@"密码不一致" autoHide:YES];
+        return;
+    }
+    [LoginVM registerWithPhone:self.accountTextField.text captchaNumber:self.verifcationTextField.text passWord:self.passwordTextField.text completion:^(BOOL finish, RegisteModel *obj) {
+        if (finish) {
+//            self.verifcationTextField.text = obj.data.captcha;
+        }
+    }];
+}
+
+
 @end

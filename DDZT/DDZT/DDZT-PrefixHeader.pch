@@ -18,5 +18,6 @@
 #import "Networking.h"
 #import <MJExtension/MJExtension.h>
 #import "BaseModel.h"
+#import "CommonVM.h"
 
 #endif /* DDZT_PrefixHeader_pch */

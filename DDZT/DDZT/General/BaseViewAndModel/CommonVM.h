@@ -10,6 +10,10 @@
 
 @interface CommonVM : NSObject
 
++ (void)loginSuccess;
+
++ (void)logout;
+
 + (void)getCommonInfoCompletion:(void(^)(BOOL finish, id obj))completion;
 
 @end
