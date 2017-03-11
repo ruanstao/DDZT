@@ -7,16 +7,17 @@
 //
 
 #import "LoginVM.h"
-
+#define LastKeyPairSaveDate @"LastKeyPairSaveDate"
+#define RSAPublicKeyPair @"RSAPublicKeyPair"
 @implementation LoginVM
 
 //获取秘钥
 + (void)getKeyPairWithPhone:(NSString *)phoneNum completion:(void(^)(BOOL finish, id obj))completion
 {
-    NSDate *lastSaveDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"LastKeyPair"];
+    NSDate *lastSaveDate = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@-%@",phoneNum,LastKeyPairSaveDate]];
     NSLog(@"%@",@([[NSDate date] timeIntervalSinceDate:lastSaveDate]));
     if (lastSaveDate != nil && [[NSDate date] timeIntervalSinceDate:lastSaveDate] < 60 * 10) {
-        NSData *unarcData = [[NSUserDefaults standardUserDefaults] objectForKey:@"RSAPublicKeyPair"];
+        NSData *unarcData = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"%@-%@",phoneNum,RSAPublicKeyPair]];
         NSDictionary *obj =   [NSKeyedUnarchiver unarchiveObjectWithData:unarcData];
         RSAKeyModel *model = [RSAKeyModel mj_objectWithKeyValues:obj];
         completion(YES,model);
@@ -26,8 +27,8 @@
         RSAKeyModel *model = [RSAKeyModel mj_objectWithKeyValues:obj];
         if (model.success) {
              NSData *arcData = [NSKeyedArchiver archivedDataWithRootObject:[model toDictionary]];
-            [[NSUserDefaults standardUserDefaults] setObject:arcData forKey:@"RSAPublicKeyPair"];
-            [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"LastKeyPair"];
+            [[NSUserDefaults standardUserDefaults] setObject:arcData forKey:[NSString stringWithFormat:@"%@-%@",phoneNum,RSAPublicKeyPair]];
+            [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:[NSString stringWithFormat:@"%@-%@",phoneNum,LastKeyPairSaveDate]];
             [[NSUserDefaults standardUserDefaults] synchronize];
             return completion(YES,model);
         }else{
@@ -42,7 +43,7 @@
 //登录
 + (void)loginWithParams:(NSDictionary *)params completion:(void(^)(BOOL finish, id obj))completion
 {
-    [[Networking sharedInstance] requestDataWithParames:params path:GetKeyPairApi  complete:^(id obj) {
+    [[Networking sharedInstance] requestDataWithParames:params path:LoginApi  complete:^(id obj) {
         UserModel *model = [UserModel mj_objectWithKeyValues:obj];
         if (model.success) {
             return completion(YES,model);
@@ -61,9 +62,7 @@
             NSString *sha1 = [RTUtil sha1:pwd];
             NSString *rsa = [RTUtil encrypString:sha1 withPubKey:model.data.publicKey];
             [LoginVM loginWithParams:@{@"mobile":phoneNum?:@"",@"pwd":rsa?:@""} completion:^(BOOL finish, UserModel *userModel) {
-                if (finish) {
                     completion(finish,userModel);
-                }
             }];
             
         }
@@ -121,9 +120,7 @@
             NSString *sha1 = [RTUtil sha1:pwd];
             NSString *rsa = [RTUtil encrypString:sha1 withPubKey:model.data.publicKey];
             [LoginVM registerWithParams:@{@"mobile":phoneNum?:@"",@"captcha":capt?:@"",@"pwd":rsa?:@""} completion:^(BOOL finish, RegisteModel *userModel) {
-                if (finish) {
                     completion(finish,userModel);
-                }
             }];
             
         }

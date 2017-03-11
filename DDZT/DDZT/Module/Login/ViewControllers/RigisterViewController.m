@@ -56,7 +56,12 @@
     }
     [LoginVM registerWithPhone:self.accountTextField.text captchaNumber:self.verifcationTextField.text passWord:self.passwordTextField.text completion:^(BOOL finish, RegisteModel *obj) {
         if (finish) {
+            [RTUtil showHudProgeressInView:self.view andWiatString:@"注册成功" autoHide:YES];
 //            self.verifcationTextField.text = obj.data.captcha;
+        }else{
+            if (obj.showType == 1) {
+                [RTUtil showHudProgeressInView:self.view andWiatString:obj.errorMsg autoHide:YES];
+            }
         }
     }];
 }

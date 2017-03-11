@@ -54,9 +54,13 @@
 }
 */
 - (IBAction)login:(id)sender {
-    [LoginVM loginWithPhone:self.accountTextField.text passWord:self.passwordField.text completion:^(BOOL finish, id obj) {
+    [LoginVM loginWithPhone:self.accountTextField.text passWord:self.passwordField.text completion:^(BOOL finish, UserModel *obj) {
         if (finish) {
             [CommonVM loginSuccess];
+        }else{
+            if (obj.showType == 1) {
+                [RTUtil showHudProgeressInView:self.view andWiatString:obj.errorMsg autoHide:YES];
+            }
         }
     }];
     
